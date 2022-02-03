@@ -5,17 +5,17 @@ import './App.css';
 
 function App() {
 
-  const [account, setAccount] = useState();
+  const [account, setAccount] = useState(0);
 
   useEffect(() => {
-    const load = async() => {
-      const web3 = new Web3(Web3.givenProvider || 'http://localhost:7545');
-      const accounts = await web3.eth.requestAccounts();
+    // const load = async() => {
+    //   const web3 = new Web3(Web3.givenProvider || 'http://localhost:7545');
+    //   const accounts = await web3.eth.requestAccounts();
       
-      setAccount(accounts[0]);
-    }
+    //   setAccount(accounts[0]);
+    // }
     
-    load();
+    // load();
    }, []);
 
   return (
